@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PLADUO</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./css/materialize.css?a"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./fonts/Notosans/font.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="./assets/js/swiper.min.css">
+  </head>
+  <style>
+   html, body {
+     position: relative;
+     height: 100%;
+   }
+   body {
+     background: #eee;
+     font-family: 'Roboto','Noto Sans',Helvetica Neue, Helvetica, Arial, sans-serif;
+     font-size: 14px;
+     color:#000;
+     margin: 0;
+     padding: 0;
+   }
+   .swiper-container {
+     width: 100%;
+     height: 300px;
+   }
+   .swiper-slide {
+     text-align: center;
+     font-size: 18px;
+     background: #fff;
+     /* Center slide text vertically */
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
+   }
+   .bg_w{background: #fff;}
+   .tit{padding-top: 20px; padding-bottom: 10px;font-size: 1.3em; font-weight:  bold;}
+   .brand-logo img{width: 80px;padding-top: 7px}
+ </style>
+  <body>
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"><img src="./img/pladuo_logo.svg" alt=""></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="clndr.html">스케줄</a></li>
+    <li><a href="badges.html">등록정보</a></li>
+    <li><a href="collapsible.html">의사정보</a></li>
+    <li><a href="mobile.html">매출</a></li>
+  </ul>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <h6 class="tit">Progress</h6>
+        <table class="striped highlight bg_w">
+          <thead>
+            <tr>
+              <th>이름</th>
+              <th>진행과정</th>
+              <th>상태</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dr.신민정</td>
+              <td>1차 데모</td>
+              <td><a href="#" class="btn">진행중</a></td>
+            </tr>
+            <tr>
+              <td>Dr.김만숙</td>
+              <td>1차 미팅 예정</td>
+              <td><a href="#" class="btn red">완료</a></td>
+            </tr>
+            <tr>
+              <td>Dr.조민기</td>
+              <td>2차 미팅</td>
+              <td><a href="#" class="btn orange darken-2">준비중</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+      <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="./js/materialize.js"></script>
+      <script type="text/javascript" src="./assets/js/swiper.min.js"></script>
+      <!-- <script type="text/javascript" src="js/underscore-min.js"></script> -->
+      <!-- update the version number as needed -->
+      <script defer src="/__/firebase/5.0.0/firebase-app.js"></script>
+      <script defer src="/__/firebase/5.0.0/firebase-auth.js"></script>
+      <script defer src="/__/firebase/5.0.0/firebase-database.js"></script>
+      <script defer src="/__/firebase/5.0.0/firebase-messaging.js"></script>
+      <script defer src="/__/firebase/5.0.0/firebase-storage.js"></script>
+      <script defer src="/__/firebase/init.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+         $('.sidenav').sidenav();
+         var swiper = new Swiper('.swiper-container', {
+          centeredSlides: true,
+          loop:true,
+          autoplay: {
+            delay: 4500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+       });
+      </script>
+  </body>
+</html>

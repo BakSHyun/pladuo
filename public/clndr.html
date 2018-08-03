@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <title>Pladuo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="./css/clndr.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./fonts/Notosans/font.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="./assets/js/swiper.min.css">
+    <style media="screen">
+      .clndr-controls{display: flex;flex-wrap: wrap;flex-direction: row; justify-content: space-between; align-items: center; padding: 10px 10px;}
+      .clndr-controls .month{font-size: 1.2em;font-weight: bold;}
+      .bg_w{background: #fff;}
+      .tit{padding-top: 20px; padding-bottom: 10px;font-size: 1.3em; font-weight:  bold;}
+      .brand-logo img{width: 80px;padding-top: 7px}
+       .event .day-contents, event .day-contents{
+         padding-bottom: 4px;
+         border-bottom: 2px solid #f75353;
+      }
+      .clndr-table td,.clndr-table th{text-align: center; }
+      .day-contents{max-width: 50%; margin: 0 auto;}
+      .last-month,.next-month{background: #c8c8c8}
+      nav{background-color: #4458cb!important}
+    </style>
+</head>
+<body>
+  <nav>
+  <div class="nav-wrapper">
+    <a href="./index.html" class="brand-logo"><img src="./img/pladuo_logo.svg" alt=""></a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+  </div>
+</nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="clndr.html">스케줄</a></li>
+    <li><a href="badges.html">등록정보</a></li>
+    <li><a href="collapsible.html">의사정보</a></li>
+    <li><a href="mobile.html">매출</a></li>
+  </ul>
+    <div class="container">
+        <div class="cal1">
+          <div class="clndr-controls">
+            <div class="clndr-previous-button">이전</div>
+            <div class="month"><%= month %></div>
+            <div class="clndr-next-button">다음</div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script type="text/javascript" src="./js/materialize.js"></script>
+    <script type="text/javascript" src="./assets/js/swiper.min.js"></script>
+    <script src="./js/clndr.js"></script>
+    <script src="./js/demo.js"></script>
+    <script type="text/javascript">
+         $('.sidenav').sidenav();
+    </script>
+</body>
+</html>
