@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700);
+
+@font-face{font-family:Nanum Barun Gothic;
+  font-weight:100;font-style:normal;
+  src:url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-UltraLight.woff);
+  src:url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-UltraLight.eot?#iefix) format("embedded-opentype"),
+  url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-UltraLight.woff2) format("woff2"),
+  url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-UltraLight.woff) format("woff"),
+  url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-UltraLight.ttf) format("truetype")}
+  @font-face{
+    font-family:Nanum Barun Gothic;font-weight:300;font-style:normal;src:url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Light.woff);
+    src:url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Light.eot?#iefix) format("embedded-opentype"),
+    url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Light.woff2) format("woff2"),
+    url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Light.woff) format("woff"),
+    url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Light.ttf) format("truetype"))}
+    @font-face{font-family:Nanum Barun Gothic;
+      font-weight:400;font-style:normal;src:url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Regular.woff);
+      src:url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Regular.eot?#iefix) format("embedded-opentype"),
+      url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Regular.woff2) format("woff2"),
+      url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Regular.woff)
+      format("woff"),url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Regular.ttf) format("truetype")
+      }
+    @font-face{font-family:Nanum Barun Gothic;
+      font-weight:700;
+      font-style:normal;src:url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Bold.woff);
+      src:url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Bold.eot?#iefix) format("embedded-opentype"),
+      url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Bold.woff2) format("woff2"),
+      url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Bold.woff) format("woff"),
+      url(/assets/fonts/NanumBarunGothic/NanumBarunGothic-Bold.ttf) format("truetype")
+    }
+*{margin: 0;padding: 0;border: 0; list-style: none;text-decoration: none;font-family:'Nanum Square',"Helvetica Neue",Helvetica,Arial,sans-serif;}
+div{position: relative;}
+a{color: #333;}
+  nav{width: 250px; float: left;height: 100vh;background: #eaeaea;position: fixed;}
+  .logo_wrap{width: 100%;height: 20vh;border-bottom:1px solid #828282; background: #f8f8f8;}
+  .logo_wrap img{display: block; padding-top: 20px; padding-left: 38px;}
+  .rest_div{width: 100%; height: 5vh; background: #adadad;}
+  .b_line{position: absolute; width: 100%;height: 2px;bottom: 0;left: 0;}
+  .menu_div{height: 49vh}
+  .menu_div .menu_ul > li{width: 100%;padding:25px 40px;position: relative;}
+  .menu_div .menu_u > li a{font-weight: bold;}
+  .menu_div .menu_u{overflow: hidden;}
+  .sns_position{margin: 0 auto;width: 178px;}
+  .sns_position a{float: left;padding:2px;}
+  .foot_div{width: 100%;height: 20vh;background: #8a847d;clear: both;}
+  .foot_div p {padding: 20px 25px;font-size: 14px;color: #fff;}
+  section{
+    width:100%;
+  }
+  .swiper-container {
+   width: 100%;
+   height: 100%;
+ }
+ .swiper-slide {
+   text-align: center;
+   font-size: 18px;
+   background: #fff;
+   /* Center slide text vertically */
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+ }
+ .swiper-button-prev{background-image:url('/assets/img/slide_right_btn.png')!important;}
+  .swiper-button-next{background-image:url('/assets/img/slide_left_btn.png')!important;}
+ .wrap{margin-left: 250px}
+ .swiper-slide img{width: 100%;}
+ .center_box{float: left; width: 550px; height:280px;overflow: hidden;max-width: 33.333%;}
+
+ .center_box:nth-child(1){background: #504c49;color: #fff;}
+ .center_box img{width: 100%;height: 100%;}
+ .main_foot_banner{clear: both;}
+ .banner_foot{float: left;}
+
+ .menu_ul{padding-bottom: 10vh}
+  .menu_ul ul{display: none;}
+  .menu_ul ul li{padding:5px 15px;}
+ .head_line{background: #333; color: #fff;width: 100%;height: 40px;}
+ .head_line li{float: left;height: 40px; padding-left: 10px; padding-right: 20px;line-height: 40px;border-right: 1px solid #fff;}
+ .sub_content{clear: both;}

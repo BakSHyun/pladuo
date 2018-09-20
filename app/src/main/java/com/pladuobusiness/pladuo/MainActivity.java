@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     WebView mWebView;
     TextView errorVeiw;
-    String target = "https://pladuo-business.firebaseapp.com/";
+    String target = "https://pladuo-app.firebaseapp.com/";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
